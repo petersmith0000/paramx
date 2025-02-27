@@ -1,0 +1,21 @@
+[package]
+name = "paramx"
+edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/mainnet", override = true }
+SuiSystem = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-system", rev = "framework/mainnet" }
+DeepBook = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/deepbook", rev = "framework/mainnet" }
+
+volo_local = { local = "../volo_local"}
+
+[addresses]
+paramx = "0x0"
+sui_system = "0x3"
+deepbook = "0xdee9"
+
+
+[dev-dependencies]
+
+[dev-addresses]
+

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "ABeeZee", serif;
+}
+
+.custom-container {
+  @apply w-full max-w-[1200px] mx-auto;
+}
+
+.screen-height {
+  @apply min-h-[calc(100vh_-_82px)];
+}
+
+.navbar a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.themeBtn {
+  @apply w-[150px] h-[30px] mx-auto border border-borderColor border-opacity-40 flex items-center justify-center text-xs text-white rounded;
+}
+
+
+:root {
+  --wkit-accent-hs: 235, 68%;
+  --wkit-on-accent-rgb: 255, 255, 255;
+  --wkit-bg-rgb: 0, 26, 56;
+  --wkit-on-bg-rgb: 255, 255, 255;
+  --wkit-font-family: "ABeeZee", serif;
+  --wkit-font-family-mono: 'IBM Plex Mono', monospace;
+  --wkit-font-size-large: 14px;
+  --wkit-font-size-medium: 12px;
+  --wkit-font-size-small: 10px;
+  --wkit-line-height-large: 11px;
+  --wkit-line-height-medium: 10px;
+  --wkit-line-height-small: 8px;
+  --wkit-button-width: 182px;
+  --wkit-border-radius: 8px;
+}
+
+.wkit-connected-button__balance {
+  visibility: hidden;
+}
+.wkit-connected-button{
+  background-color: rgba(var(--wkit-on-bg-rgb),0)
+}
+.wkit-button {
+  background-color: rgba(var(--wkit-on-bg-rgb),0)
+}
+.wkit-button:hover {
+  background-color: rgba(var(--wkit-on-bg-rgb), 0.2); /* Adjust the opacity as needed */
+}
+/* rgba(var(--wkit-on-bg-rgb),0) */
+.wkit-disconnect-button__container{
+  bottom: -34px;
+}

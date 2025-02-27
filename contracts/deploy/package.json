@@ -1,0 +1,27 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "ufe": "node src/update_frontend.js",
+    "d": "node src/deploy.js",
+    "f": "node src/faucet.js",
+    "mc": "node src/mint_volo.js",
+    "mpy": "node src/mint_pt_yt.js",
+    "cro": "node src/create_orders.js",
+    "clo": "node src/close_orders.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "@mysten/sui": "^1.21.2",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,10 @@
+# Logs
+contracts/deploy/node_modules
+contracts/move/paramx/build/*
+contracts/move/volo_local/build/*
+
+
+frontend/node_modules
+frontend/dist
+
+.DS_Store
